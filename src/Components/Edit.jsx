@@ -26,7 +26,7 @@ function Edit({emp}) {
     else{
       const result=await updateEmpApi(emp._id,editEmp)
       if(result.status==200){
-        alert("Project Updated")
+        alert("Update Complete")
         handleClose()
         setEditResponse(result)
       }
